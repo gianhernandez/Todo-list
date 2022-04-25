@@ -1,0 +1,45 @@
+form {
+    margin:10px
+}
+
+/* Classes */
+
+.btn-primary {
+    margin-top:10px
+}
+
+.img-logo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.table-cell {
+    background-color: #0d6efd;
+}
+
+.table-data {
+    color:white !important;
+}
+
+.title {
+    text-align: center;
+    margin: 3% auto 7% auto;
+}
+
+.todo-image {
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+.parent {
+  min-height: 80vh;
+}
+
+.child {
+    width: 50%;
+}

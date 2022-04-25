@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+
+    <br/>
+    <div class="parent container d-flex justify-content-center align-items-center h-100">
+        <div class="child">
+
+            <div class="shadow-lg p-3 mb-5 bg-white rounded form-container">
+                <h1>Login</h1>
+                {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+            </div>
+            {% for message in get_flashed_messages() %}
+                {{ message }}
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}
