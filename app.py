@@ -33,6 +33,9 @@ app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 
 db.init_app(app)
 
+with app.app_context():
+    db.create_all()
+
 # Configure flask-migrate
 migrate = Migrate()
 migrate.init_app(app, db)
