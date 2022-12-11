@@ -20,9 +20,9 @@ login_manager.init_app(app)
 
 
 USER_DB = 'postgres'
-PASS_DB = 'admin'
-URL_DB = 'localhost:5432'
-NAME_DB = 'todo_list_db'
+PASS_DB = '0zvpfMfyXvp3oogXpXHm'
+URL_DB = 'containers-us-west-168.railway.app:5945'
+NAME_DB = 'railway'
 FULL_URL_DB = f'postgresql://{USER_DB}:{PASS_DB}@{URL_DB}/{NAME_DB}'
 
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', FULL_URL_DB)
